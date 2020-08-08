@@ -1,0 +1,247 @@
+body, div, span, header, footer, nav, section, aside, article, ul, dl, dt, dd, li, a, p, h1, h2, h3, h4,h5, h6, i, b, textarea, button, input, select, figure, figcaption {
+  font-family: Microsoft YaHei, Arial;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-style: normal;
+  text-decoration: none;
+  border: none;
+  box-sizing: border-box;
+  font-weight: normal;
+  -webkit-tap-highlight-color:transparent;
+  -webkit-font-smoothing: antialiased;
+  -webkit-overflow-scrolling: touch;
+  outline: none;
+  -webkit-appearance: none;
+  &:focus {
+    outline: none;
+  }
+  &::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 3px;
+  }
+
+  &:hover::-webkit-scrollbar-thumb {
+    background: $main-color;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #ccc;
+  }
+}
+
+html, body{
+  height: 100%;
+}
+.el-table td, .el-table th {
+  padding: 6px 0!important;
+  .el-button--text{
+    padding: 0px;
+  }
+}
+.el-menu--vertical{
+  .el-menu-item-group__title{
+    padding: 0;
+  }
+  .el-menu-item{
+    height: 40px!important;
+    line-height: 40px!important;
+    user-select: none;
+  }
+}
+#w-container {
+  height: 100%;
+  overflow: hidden;
+  .w-main-all-Block{
+    height: 100%;
+    .w-main-right-Block{
+      float: right;
+      display: block;
+      box-sizing: border-box;
+      /* ----------过滤器折叠板统一样式开始---------- */
+      .filter .el-collapse{
+        width: 100%;
+        border: none
+      }
+      .filter .el-header{
+        padding-top: 24px;
+      }
+      .filter .el-collapse-item__wrap{
+        border: none;
+      }
+      .filter .el-collapse-item__header.is-active{
+        border-bottom: 1px solid #eee;
+      }
+      .filter .el-collapse-item__header{
+        border-bottom: none;
+        height: 34px;
+        line-height: 34px;
+        transition: border-bottom-color 0s;
+      }
+      /* ----------过滤器折叠板统一样式结束---------- */
+      .el-container{
+        background: #fff;
+      }
+      .w-pageInner{
+        padding-bottom: 10px;
+        box-sizing: border-box;
+      }
+      .w-title{
+        color: #ccc;
+        height: 64px;
+        background: $main-color;
+        font-weight: 800;
+        display: block;
+        box-shadow: 0px 4px 3px 0px
+        rgba(214, 215, 220, 0.34);
+        width: 100%;
+        padding-left: 20px;
+        position: relative;
+        // 个人信息
+        .w-person-info{
+          position: absolute;
+          right: 20px;
+          top: 12px;
+          color: #fff;
+          line-height: 40px;
+          font-size: 14px;
+          span{
+            margin-left: 10px;
+            vertical-align: middle;
+            cursor: pointer;
+          }
+        }
+        .w-collapse-block{
+          position: relative;
+          height: 100%;
+          i{
+            position: absolute;
+            top: 18px;
+            left: 0;
+            border: none;
+            color: #fff;
+            font-size: 26px;
+            cursor: pointer;
+          }
+        }
+      }
+      .w-breadcrumb{
+        font-size: 14px;
+        box-shadow: 0px 0px 7px rgba(170, 170, 170, 0.5);
+        width: 100%;
+        overflow: hidden;
+        height: 64px;
+        line-height: 64px;
+        padding-left: 20px;
+        box-sizing: border-box;
+        span{
+          color: #999;
+          font-size: 14px;
+        }
+        .Breadc-text{
+          cursor: pointer;
+          user-select: none;
+        }
+        .Breadc:last-child{
+          span{
+            color: #333;
+          }
+        }
+      }
+
+    }
+    .w-main-left-Block{
+      height: 100%;
+      float: left;
+      box-sizing: border-box;
+      .w-menu{
+        height: 100%;
+        overflow-y: scroll;
+        border-right:1px solid  $main-color;
+        &::-webkit-scrollbar {
+          width: 0px;
+          height: 0px;
+          background: transparent;
+        }
+        &::-webkit-scrollbar-track {
+          width: 0;
+        }
+        .el-menu-item-group__title{
+          padding: 0;
+        }
+        .el-menu-item{
+          height: 40px!important;
+          line-height: 40px!important;
+          user-select: none;
+          padding-left: 60px!important;
+          background: #012f5a!important;
+        }
+        .el-menu-item.is-active{
+          background: #1a4c7b!important;
+        }
+        .el-menu-item:hover{
+          color: #fff!important;
+        }
+        .el-submenu.is-active{
+          .el-submenu__title{
+            color: #fff!important;
+          }
+        }
+        .el-submenu__title{
+          user-select: none;
+          background: #00386c!important;
+        }
+        .el-submenu__title:hover{
+          color: #fff!important;
+        }
+      }
+      .w-menu-title{
+        font-size: 24px;
+        width: 100%;
+        display: block;
+        height: 64px;
+        line-height: 64px;
+        background: $main-color;
+        color: white!important;
+        text-align: center;
+        border:none;
+        box-sizing: border-box;
+        box-shadow: 0px 2px 0px 0px
+        rgba(2, 44, 84, 0.34);
+        z-index: 1;
+        position: relative;
+        img{
+          height: 36px;
+          width: 36px;
+          vertical-align: middle;
+          border-radius: 100%;
+        }
+      }
+    }
+    .w-main-Block{
+      width: 100%;
+      display: flex;
+      overflow: auto;
+      position: relative;
+      background: #ebf0f5;
+    }
+  }
+  .w-menu:not(.el-menu--collapse) {
+    width: 256px;
+  }
+  .el-menu-item-group{
+    ul{
+      overflow: hidden;
+    }
+  }
+  div[id*="qiankun_microapp"]{
+    width: 100%;
+  }
+}
+
